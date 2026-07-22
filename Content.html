@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+ box-sizing: border-box;
+}
+
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Style the header */
+header {
+ background-color: blue;
+ padding: 30px;
+ text-align: center;
+ font-size: 35px;
+ color: white;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+ float: left;
+ width: 30%;
+ height: 300px; /* only for demonstration, should be removed */
+ background: white;
+ padding: 20px;
+}
+
+
+/* Style the list inside the menu */
+nav ul {
+ list-style-type: none;
+ padding: 0;
+}
+
+
+article {
+ float: left;
+ padding: 20px;
+ width: 70%;
+ background-color: white;
+ height: 300px; /* only for demonstration, should be removed */
+}
+
+
+/* Clear floats after the columns */
+section::after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+/* Style the footer */
+footer {
+ background-color: blue;
+ padding: 10px;
+ text-align: center;
+ color: white;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+ nav, article {
+   width: 100%;
+   height: auto;
+ }
+}
+</style>
+
+
+</head>
+<body>
+
+
+
+
+<header>
+ <h2>Content</h2>
+ <h4>Philadelphia, The Hidden Genius Project Program</h4>
+</header>
+
+
+<section>
+ <nav>
+  <div style="border-style: solid; border-color: blue; border-width: 5px; height: 150px; width: 175px;">
+   <img src="/Users/admin/Desktop/Curt-Website/Webpages/images.png"alt="Hidden Genius" width="175" height="150">
+   </div>
+   <ul>
+   <!-- Tells the browser to look inside the Webpages folder -->
+   <a href="file:///Users/admin/Desktop/Curt-Website/Webpages/CurtHome">Home</a>
+   <br>
+   <a href="file:///Users/admin/Desktop/Curt-Website/Webpages/AboutMe.html">About Me</a>
+   <br>
+   <a href="file:///Users/admin/Desktop/Curt-Website/Webpages/Contact.html">Contact</a>
+   
+   </ul>
+ </nav>
+  <article>
+   <h1>Content</h1>
+   <p>My future goal is to work in Construction and to become a mechanical engineer to work in these professions, 
+    I plan to get a bachelor in Mechanical Engineering and learn how to use design software well for construction i plan to go to trade school for the skills i want to learn. 
+    As a mechanical engineer, softwares like CAD and CAE benefit mechanical engineering by helping them in design. 
+     My Project will demonstrate how coding is used in mechanical engineering. </p>
+
+  <div style="position: relative; left: 400px; bottom: 20px;">
+    <div style="border-style: solid; border-color: blue; border-width: 5px; height: 125px; width: 150px;">
+      <img src="/Users/admin/Desktop/Curt-Website/Webpages/images copy.jpeg" alt="mechanical" width="150" height="125">
+    
+    </div>
+
+    <div style="position: relative; right: 200px; bottom: 130px;">
+    <div style="border-style: solid; border-color: blue; border-width: 5px; height: 125px; width: 150px;">
+      <img src="/Users/admin/Desktop/Curt-Website/Webpages/images.jpeg" alt="construction" width="150" height="125">
+    
+    </div>
+
+
+ </article>
+</section>
+
+
+<footer>
+ <p>Footer</p>
+</footer>
+
+
+</body>
+</html>
